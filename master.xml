@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote fetch="ssh://legit.letv.cn:29418" name="origin" review="legit.letv.cn:29418"/>
+    <default remote="origin" revision="master"/>
+    <project path="logreporter" name="commonlib/logreporter"/>
+    <project path="logreporter/lecore" name="terminal/lecore" revision="master_refactor"/>
+    <project path="thirdpartytools" name="thirdpartytools" revision="master">
+        <copyfile src="common_gradle/gradlew" dest="gradlew"/>
+        <copyfile src="common_gradle/gradle-wrapper.jar" dest="gradle/wrapper/gradle-wrapper.jar"/>
+        <copyfile src="common_gradle/gradle-wrapper.properties"
+                  dest="gradle/wrapper/gradle-wrapper.properties"/>
+        <copyfile src="gradle.zip" dest="gradle/wrapper/gradle.zip"/>
+    </project>
+
+</manifest>
